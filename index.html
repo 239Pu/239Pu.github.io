@@ -295,7 +295,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-10-28 17:11:21 / 修改时间：17:12:16" itemprop="dateCreated datePublished" datetime="2019-10-28T17:11:21+08:00">2019-10-28</time>
+              <time title="创建时间：2019-10-28 17:11:21 / 修改时间：20:08:18" itemprop="dateCreated datePublished" datetime="2019-10-28T17:11:21+08:00">2019-10-28</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -320,7 +320,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="CentOS7完整手动搭建LAMP环境"><a href="#CentOS7完整手动搭建LAMP环境" class="headerlink" title="CentOS7完整手动搭建LAMP环境"></a>CentOS7完整手动搭建LAMP环境</h1><h2 id="安装准备"><a href="#安装准备" class="headerlink" title="安装准备"></a>安装准备</h2><h3 id="调整网络"><a href="#调整网络" class="headerlink" title="调整网络"></a>调整网络</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/sysconfig/network-scripts #查看是否有ifcfg-e**网卡</span><br><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-e** #把ONBOOT=no 改为 ONBOOT=yes</span><br><span class="line">service network restart  #重启</span><br></pre></td></tr></table></figure>
+          <h1 id="CentOS7完整手动搭建LAMP环境"><a href="#CentOS7完整手动搭建LAMP环境" class="headerlink" title="CentOS7完整手动搭建LAMP环境"></a>CentOS7完整手动搭建LAMP环境</h1><h2 id="安装准备"><a href="#安装准备" class="headerlink" title="安装准备"></a>安装准备</h2><h3 id="调整网络"><a href="#调整网络" class="headerlink" title="调整网络"></a>调整网络</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/sysconfig/network-scripts <span class="comment">#查看是否有ifcfg-e**网卡</span></span><br><span class="line">vi /etc/sysconfig/network-scripts/ifcfg<span class="_">-e</span>** <span class="comment">#把ONBOOT=no 改为 ONBOOT=yes</span></span><br><span class="line">service network restart  <span class="comment">#重启</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/10/28/CentOS7%E6%90%AD%E5%BB%BALAMP%E7%8E%AF%E5%A2%83/#more" rel="contents">
