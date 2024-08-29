@@ -1,0 +1,301 @@
+
+<!doctype html><html><head><title></title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="format-detection" content="address=no"><meta name="format-detection" content="email=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="stylesheet" href="/Public/static/duanlian-mkt-adtemplate-css.css?20240813_163057"><script id="J_script_attrsniffer" data-remmaxwidth="60" data-remwidth="750" data-remswitch="1" src="/Public/static/bylibs.js?20240813_163057"></script><script>var wagv = {
+        pn:"duanlian-mkt-adtemplate",
+        app: 'http://m.s.lianda.fun/',
+        pageJsListArr: [],
+        pageJsLoadedCallbackArr: []
+    };
+</script></head><body><style>
+html, body{height:100%; background:#FFF; margin:0; padding:0; font-size:.26rem;}
+body{-webkit-overflow-scrolling:touch; overflow-x:hidden;}
+.container{position:relative; min-height:100%; margin:0 auto;}
+.by-ios .container{min-height:100.1%;}
+.w100{width:100%;}
+.module-box{padding-bottom:1.5rem;}
+.module-item{position:relative; box-sizing:border-box;}
+.module-image-item a{display:block;}
+.module-image-item img{vertical-align:middle;}
+.module-image-item.absolute{position:absolute;}
+.module-image-item.fixed{position:fixed;}
+
+.module-chat-item{padding:.1rem 0 1rem 0;}
+.module-direct-item{padding:.1rem 0 2rem 0;}
+
+.choice{width:100%; margin-top:.2rem; text-align:left;}
+.choice .btn{display:block; width:100%; box-sizing:border-box; text-align:center; text-decoration:none; color:#fff; margin-bottom:.1rem; padding:.15rem 0; background:#b72605; border:1px solid #b72605; border-radius:.8rem; box-shadow:0 0 6px #d9d9d9; white-space:nowrap; cursor:pointer;}
+
+.bubble{padding:.15rem; overflow:hidden; position:relative; animation:change 1s; display:none;}
+@keyframes change{
+0%{top:1.2rem;}
+100%{top:0;}
+}
+.bubble:after{clear:both; content:'';}
+.bubble .avatar{display:block; height:.88rem; width:.88rem; border-radius:50%; overflow:hidden;}
+.bubble .avatar>img{width:100%;height:100%;border-radius:50%;}
+.bubble.left .avatar{float:left;}
+.bubble.right .avatar{float:right;}
+.bubble .content{padding:.2rem; color:#181621; background:#f3f3f3; border-radius:.15rem; position:relative; box-shadow:0 0 3px #d9d9d9,0 1px 3px #d9d9d9;}
+.bubble .content1{display:inline-block; box-shadow:none; background:#1885ff; color:#FFF;/* display:none;*/}
+
+.bubble.left{text-align:left;}
+.bubble.right{text-align:right;}
+.bubble.left .wrap{margin-left:1rem; margin-right:1.5rem;}
+.bubble.left .wrap p{width:auto; font-size:.22rem; margin:0; margin-bottom:.1rem; color:#808080;}
+.bubble.left .content{background:#FFF;}
+.bubble.left .content .link{color:#007bff; text-decoration:none;}
+
+.bubble .card-msg{padding:0; overflow:hidden;}
+.card-box{height:1.2rem; display:flex; justify-content:space-between; align-items:center; text-decoration:none;}
+.card-img{width:1.2rem; height:1.2rem; overflow:hidden; display:flex; align-items:center; justify-content:center;}
+.card-info{flex:1; padding-left:.2rem;}
+.card-title{margin-bottom:.1rem; font-weight:400; color:#181621;}
+.card-desc{max-height:.64rem; font-size:.22rem; line-height:.32rem; color:#6f6f6f; overflow:hidden;}
+
+.direct-reply-box{position:fixed; left:0; bottom:0; z-index:9000; width:100%; box-sizing:border-box; padding:.2rem; background:#F1F1F1;}
+.direct-reply-box form{display:flex;}
+.direct-reply-box input{flex:1; height:.7rem; padding:0 .2rem; box-sizing:border-box; border:1px solid #ced4da; background:#FFF; font-size:.26rem; color:#495057; box-shadow:inset 0 0 0 transparent; transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; border-radius:.06rem 0 0 .06rem; outline:none;}
+.direct-reply-box button{width:1.2rem; height:.7rem; box-sizing:border-box; text-align:center; color:#fff; background:#007bff; border:none; outline:none; border-radius:0 .06rem .06rem 0;}
+.direct-reply-box .footer-info{position:static; padding-bottom:0;}
+
+.form-box{margin:.2rem; font-size:.24rem;}
+.form-box .form-inner{padding:.2rem .3rem; background:#FFF; color:#333;}
+.form-box .form-hd{font-size:.24rem; font-weight:bold; line-height:.6rem;}
+.form-box .form-hd em{font-size:.3rem; font-weight:bold; color:#F00; margin-left:.1rem;}
+.form-box .form-bd{margin-bottom:.2rem;}
+.form-box .form-input{width:100%; height:.6rem; padding:0 .2rem; outline:none; border:1px solid #CCC; box-sizing:border-box; border-radius:.06rem; line-height:.6rem;}
+.form-box .form-input.required{border-color:#F60;}
+.form-box .form-radio, .form-box .form-checkbox{margin:0; padding:0; margin-right:.1rem;}
+.form-box .form-input-group{display:flex; justify-content:space-between; align-items:center;}
+.form-box .form-input-group .form-input{flex:1; border-right:none; border-radius:.06rem 0 0 .06rem;}
+.form-box .form-input-group .form-button{outline:none; border:none; height:.6rem; border:1px solid #CCC; border-radius:0 .06rem .06rem 0; padding:0 .2rem;}
+.form-box .form-option-group{display:flex; flex-wrap:wrap;}
+.form-box .form-option-group label{display:inline-flex; align-items:center; line-height:.6rem; flex:1 0 100%;}
+.form-box .btn-submit{display:flex; justify-content:center; align-items:center; width:100%; height:.8rem; border:0 solid transparent; outline:none; margin:.2rem 0; padding:0; border-radius:.1rem; text-align:center; text-decoration:none; color:#FFF; background:#007bff;}
+.form-box .form-inner .btn-submit{margin-top:.4rem;}
+
+@keyframes heartbeat{
+	0%{transform:scale(.9, .9);}
+	25%{transform:scale(1, 1);}
+	100%{transform:scale(.9, .9);}
+}
+
+</style><div class="container"><div class="module-box J_module_box"><div class="module-item module-image-item" ><img src="https://liandaoss.oss-rg-china-mainland.aliyuncs.com/skin/duanlian/gnawilnaf/20240812/f61b0a9e9b5f0f71e3882960758e5c0559ee40f5.jpg" class="w100"></div><div class="module-item module-image-item" style="left: 0%; bottom: 0%; width: 100%; z-index: 998; position: fixed"><a href="javascript:void(0);" class="J_btn_jump"><img src="https://liandaoss.oss-rg-china-mainland.aliyuncs.com/skin/duanlian/gnawilnaf/20240717/140506050af0fef0d0fd407ee4d6fe64e5ac70ce.gif" class="w100"></a></div></div></div><script>
+window.onunload = function(){};
+function jsLoadCallback(){
+    var $document = $(document);
+    var Toast = Baoyung.Utility.Toast;
+    var pushUrl = '/mkt/adpush/pushdata?click_id=&link_id=23724&ctime=1724924276';
+    var clickUrl = 'https://work.weixin.qq.com/kfid/kfc5c94680fe20ae2cb?enc_scene=ENC7YmoFhQ7uuWEc41fa6ujhxpu9wR4ZNDbVGfLawZKWNJe';
+
+    function convertHtml(str){
+        var map = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#039;'};
+        return str.replace(/[&<>"']/g, function(m) {
+            return map[m];
+        });
+    }
+
+    function initCommon(){
+        $('html, body').scrollTop(0);
+
+        $document.on('click', '.J_btn_jump', function(){
+            var $this = $(this);
+
+            $.getJSON(pushUrl, {'last_user_action': 'button'}, function(res){
+                if(res.status == 1){
+                    window.location.href = clickUrl;
+                }
+            });
+        });
+    }
+
+    function scrollToEnd(){
+        if(/iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase())){
+            $('.container').height($document.height() + 1);
+        }
+        $('html, body').scrollTop($document.height());
+    }
+
+    //chat
+    function initChat(){
+        if($('#J_module_chat_item').length == 0){
+            return;
+        }
+
+        setTimeout(function(){
+            $('.J_bubble_question').eq(0).show();
+            scrollToEnd();
+        }, 800);
+
+        $document.on('click', '.J_btn_answer', function(){
+            var $this = $(this);
+            var $closest = $this.closest('.J_bubble');
+            var $answer = $closest.next('.J_bubble_answer');
+
+            $this.closest('.J_answer_box').hide();
+            $answer.show().find('.J_answer_text').text($this.text());
+
+            setTimeout(function(){
+                $answer.hide().show();
+                scrollToEnd();
+            }, 1000);
+        }).on('click', '.J_btn_success', function(){
+            setTimeout(function(){
+                $('#J_bubble_success').show();
+            }, 800);
+        }).on('click', '.J_btn_wrong', function(){
+            setTimeout(function(){
+                $('#J_bubble_error').show();
+            }, 800);
+        }).on('click', '.J_btn_next', function(){
+            var $this = $(this);
+
+            setTimeout(function(){
+                $this.closest('.J_bubble').next('.J_bubble_answer').next('.J_bubble_question').show();
+            }, 800);
+        });
+    }
+
+
+    //direct
+    function initDirect(){
+        var $direct = $('#J_module_direct_item');
+
+        if($direct.length == 0){
+            return;
+        }
+
+        var replyTmpl = $('#J_template_reply').html();
+        var replySuccessTmpl = $('#J_template_reply_success').html();
+        var replyErrorTmpl = $('#J_template_reply_error').html();
+        var $input = $('#J_input_direct_reply');
+        var keywords = $input.data('keywords').toString().split(/[,，，]/);
+        var error = $input.data('error');
+
+        $('#J_btn_direct_reply').on('click', function(){
+            var val = $.trim($input.val());
+            if(val == ''){
+                return;
+            }
+
+            var msg = convertHtml(val);
+            $input.val('');
+            $direct.append(replyTmpl.format(msg));
+
+            setTimeout(function(){
+                if(keywords.includes(msg)){
+                    $direct.append(replySuccessTmpl);
+                }
+                else{
+                    if(error != ''){
+                        $direct.append(replyErrorTmpl);
+                    }
+                }
+
+                scrollToEnd();
+            }, 800);
+        });
+    }
+
+    function initForm(){
+        $('.J_send_code').not('[disabled]').on('click', function() {
+            var $this = $(this);
+            var mobile = $.trim($('input[name="mobile"]').val());
+
+            if(!InputValidation.isPhone(mobile)){
+                Toast.open('请输入正确的手机号');
+                return;
+            }
+
+            $.getJSON('/mkt/adpush/sendverifycode?jsoncallback=?', {'mobile': mobile}, function(res){
+                if(res.status == 1){
+                    $this.countdownButton({
+                        until: 60,
+                        notActiveClass: 'btn-disabled',
+                        append: "秒后可重新"
+                    });
+                    Toast.open('{0}至{1}'.format(res.info, mobile));
+                }
+                else{
+                    Toast.open(res.info);
+                }
+            });
+        });
+
+
+        $('.J_btn_form_submit').each(function(){
+            var $this = $(this);
+            var type = $this.data('type');
+            var action = $this.data('action');
+
+            $this.on('click', function(){
+                var $closest = $this.closest('.J_form_box');
+
+                if(type == 2){
+                    $closest = $this.closest('.J_module_box');
+                }
+
+                var $field = $closest.find('.J_form_field');
+
+                $field.each(function(){
+                    var $i = $(this);
+                    var msg = $i.closest('.form-bd').prev().text().replace('*', '');
+
+                    if($i.attr('required') && $i.val() == '' && ($i.attr('type') == 'text' || $i.attr('type') == 'tel')){
+                        $i.addClass('required');
+                        Toast.open('请填写' + msg);
+                        return false;
+                    }
+                    else if($i.attr('required') && ($i.attr('type') == 'radio' || $i.attr('type') == 'checkbox')){
+                        var $check = $('input[name=\"' + $i.attr('name') + '\"]');
+                        if($check.filter(':checked').length == 0){
+                            $check.addClass('required');
+                            Toast.open('请填写' + msg);
+                            return false;
+                        }
+                        else{
+                            $check.removeClass('required');
+                        }
+                    }
+                    else{
+                        $i.removeClass('required');
+                    }
+
+                    $this.prop('disabled', false);
+                });
+
+                if($field.filter('.required').length > 0){
+                    return;
+                }
+                else{
+                    $this.prop('disabled', true);
+                    var data = $field.serialize();
+
+                    $.getJSON(pushUrl, data, function(res){
+                        Toast.open(res.info);
+
+                        if(res.status == 1 && action == 1){
+                            window.location.href = clickUrl;
+                        }
+                        $this.prop('disabled', false);
+                    });
+                }
+            });
+        });
+    }
+
+    function init(){
+        initCommon();
+        initChat();
+        initDirect();
+        initForm();
+    }
+
+    init();
+}
+</script><script>(function(){var d="jquery";var c={"vue":"/Public/libs/vue/2.3.3/vue.min.js","jquery":"/Public/libs/jquery/2.1.1/jquery.min.js"};if(d!=""){var b=d.split(",");var a=b.length;for(i=0;i<a;i++){wagv.pageJsListArr.push(c[b[i]])}}wagv.pageJsListArr.push("/Public/static/duanlian-mkt-adtemplate-js.js?20240813_163057");if(typeof(jsLoadCallback)=="function"){wagv.pageJsLoadedCallbackArr.push(jsLoadCallback)}setTimeout(function(){head.load(wagv.pageJsListArr,function(){for(var f=0,e=wagv.pageJsLoadedCallbackArr.length;f<e;++f){wagv.pageJsLoadedCallbackArr[f]()}})},10)}());
+</script></body></html>
